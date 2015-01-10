@@ -1,0 +1,17 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* universal */
+
+body {
+	padding: 75px;
+}
+
+/* footer */
+footer {
+	padding: 10px; 
+	small {
+		float: left;
+		padding-top: 15px
+	}
+}
