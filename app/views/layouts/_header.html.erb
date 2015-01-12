@@ -1,5 +1,5 @@
 <header> 
-	<% if current_page?(action: 'home') %>
+	<% if current_page?(controller: "static_pages", action: 'home') %>
 		<div id="home_header" class="container-fluid">
 		<% logo = image_tag('logo-home.png') %>	
 	<% else %>
@@ -20,7 +20,7 @@
 	    <div class="collapse navbar-collapse clearfix">
 	    	<%= link_to logo, root_path, class: "navbar-brand pull-left", id: "logo" %>	
 	    	<ul class="nav navbar-nav pull-right">
-	    		<li><a href="#">Sign Up</a></li>
+	    		<li><%= link_to "Sign Up", signup_path %></li>
 	    		<li><a href="#">Log In</a></li>
 	    		<li><%= link_to "Help", contact_path %></li>
 	    		<li><button type="button" class="btn btn-primary navbar-btn">List Your Retreat</button></li>
