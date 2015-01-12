@@ -24,8 +24,18 @@ section {
 /* jumbotron */
 
 .jumbotron {
-		height: 500px;
-		padding-top: 100px;
+	height: 500px;
+	padding-top: 120px;
+	background-image: image-url('homepage-feature.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: $gray-medium-light;
+	h1, {
+		font-weight: 800;
+	}
+	h2, h3, h4, p {
+		font-weight: 500;
+	}
 }
 
 /* header */
@@ -36,6 +46,13 @@ section {
 	top: 20px;
 	background:transparent;
 	z-index: 1000;
+	a {
+		color: white;
+		&:hover {
+    background: none;
+    color: $gray-medium-light;
+  	}
+	}
 }
 
 /* footer */
