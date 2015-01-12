@@ -40,7 +40,7 @@ section {
 
 /* header */
 
-#header {
+#home_header {
 	position: absolute;
 	width: 100%;
 	top: 20px;
@@ -54,6 +54,13 @@ section {
   	}
 	}
 }
+
+#header {
+	position: relative;
+	width: 100%;
+	top: 20px;
+	z-index: 1000;
+	}
 
 /* footer */
 footer {

@@ -1,5 +1,12 @@
 <header> 
-	<div id="header" class="container-fluid">
+	<% if current_page?(action: 'home') %>
+		<div id="home_header" class="container-fluid">
+		<% logo = image_tag('logo-home.png') %>	
+	<% else %>
+		<div id="header" class="container-fluid">
+		<% logo = image_tag('logo.png') %>	
+	<% end %>
+
 		<nav class="navbar navbar-static-top" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 
 			<!-- hidden nav button toggle for screen readers -->
@@ -11,7 +18,7 @@
 
 	    <!-- navigation grouped with logo for mobile -->
 	    <div class="collapse navbar-collapse clearfix">
-	    	<%= link_to image_tag('logo.png'), root_path, class: "navbar-brand pull-left", id: "logo" %>
+	    	<%= link_to logo, root_path, class: "navbar-brand pull-left", id: "logo" %>	
 	    	<ul class="nav navbar-nav pull-right">
 	    		<li><a href="#">Sign Up</a></li>
 	    		<li><a href="#">Log In</a></li>
