@@ -18,6 +18,7 @@ gem 'jquery-rails',            '4.0.0.beta2'
 gem 'turbolinks'
 gem 'jbuilder',                '2.2.3'
 gem 'sdoc',                    '0.4.0', group: :doc
+gem 'autoprefixer-rails'
 
 group :development, :test do
   gem 'sqlite3'

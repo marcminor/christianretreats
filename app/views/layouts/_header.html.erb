@@ -1,21 +1,22 @@
 <header> 
-	<div class="container-fluid">
-		<nav class="navbar navbar-fixed-top" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
+	<div id="header" class="container-fluid">
+		<nav class="navbar navbar-static-top" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
 
 			<!-- hidden nav button toggle for screen readers -->
 			<div class="navbar-header">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 	        <span class="sr-only">Toggle navigation</span>
 	      </button>
-	      <%= link_to image_tag('logo.png'), root_path, class: "navbar-brand", id: "logo" %>
 	    </div>
 
 	    <!-- navigation grouped with logo for mobile -->
-	    <div class="collapse navbar-collapse pull-right">
-	    	<ul class="nav navbar-nav">
+	    <div class="collapse navbar-collapse clearfix">
+	    	<%= link_to image_tag('logo.png'), root_path, class: "navbar-brand pull-left", id: "logo" %>
+	    	<ul class="nav navbar-nav pull-right">
 	    		<li><a href="#">Sign Up</a></li>
 	    		<li><a href="#">Log In</a></li>
 	    		<li><%= link_to "Help", contact_path %></li>
+	    		<li><button type="button" class="btn btn-primary navbar-btn">List Your Space</button></li>
 	    	</ul>
 	    </div>
 	  </nav>
