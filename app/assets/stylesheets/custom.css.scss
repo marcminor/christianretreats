@@ -3,15 +3,27 @@
 
 /* universal */
 
-body {
-	padding: 75px;
-}
+
+/* jumbotron */
+
 
 /* footer */
 footer {
 	padding: 10px; 
 	small {
 		float: left;
-		padding-top: 15px
+		padding-top: 15px;
 	}
+}
+
+/* search area */
+.search-area {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search-form-input-wrapper {
+	display: inline-block;
+	position: relative;
 }
