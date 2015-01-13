@@ -11,7 +11,7 @@ class SiteLayoutTest < ActionDispatch::IntegrationTest
 		assert_match "List Your Retreat", response.body
 		assert_select	"a[href=?]", about_path
 		get signup_path
-    assert_select "title", full_title("Sign up")
+    assert_select "title", full_title("Sign Up")
 	end
 
 	test "unique headers" do 
